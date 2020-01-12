@@ -1,5 +1,9 @@
 # Things might be simpler than they seem
 
+| Length | Audience             | YouTube | Held at |
+| ------ | -------------------- | ------- | ------- |
+| 30 min | Junior - Experienced |         |         |
+
 ## Abstract
 
 When you're new to development existing frameworks can seem magical and you sometimes have the feeling that you'll never be able to build something like this on your own.
