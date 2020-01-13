@@ -1,5 +1,7 @@
 # Biography
 
+[Picture](http://frontendphil.github.io/images/profile.jpg)
+
 ## Short
 
 Philipp loves to code and teach people.
