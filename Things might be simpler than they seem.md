@@ -9,15 +9,15 @@
 When you're new to development existing frameworks can seem magical and you sometimes have the feeling that you'll never be able to build something like this on your own.
 This talk will take the magic out of a prominent library.
 We will look at the basic principles that are used so that you can understand what happens behind the scenes.
-With this you will be able to implement it yourself afterwards and maybe even tweak it a bit more.
+With this, you will be able to implement it yourself afterward and maybe even tweak it a bit more.
 You are now a library developer!
 
 ## Description
 
-In this talk I will implement a very basic version of Redux with the tools that React offers today.
+In this talk, I will implement a very basic version of Redux with the tools that React offers today.
 The essence of Redux can be achieved with just a few lines of `useContext` and `useReducer`.
 If we sprinkle some types in there as well you get an even better development experience.
-With all that in place we can have a look at how we can compose the core building blocks into accessible APIs.
+With all that in place, we can have a look at how we can compose the core building blocks into accessible APIs.
 
 As a tech lead at [Signavio](https://www.signavio.com) I've done this to demystify Redux for junior developers.
 We do this in mob-programming sessions where I often as a lot of questions and guide junior developers towards the solution.
@@ -38,7 +38,7 @@ Junior developers sometimes do not fully understand all plugins and therefore it
 
 ### 2. Exploring the essence
 
-In this section I will try to peel away the plugins.
+In this section, I will try to peel away the plugins.
 I'll do this by providing a short example of what people use a plugin for and why this isn't always necessary.
 This should already help the audience better understand the motivation for the talk.
 
@@ -50,14 +50,14 @@ I will highlight how a `store` is also just `state` with some methods on top tha
 We will go on by introducing the `useReducer` hook that will be used for the core.
 This hook already gives us most of what we need; a `state` and a `dispatch` method.
 Now we only need to make these parts accessible in our application.
-For that we can `useContext`.
+For that, we can `useContext`.
 We're essentially done but I will also show how a `connect` higher-order component, and `reduceReducers` method can be built in just a couple of lines of code.
 
 ### 4. Taking this even further
 
-Since we now understand the core of our implementation and have based it purely on standard React functionality we can built even nicer things on top.
+Since we now understand the core of our implementation and have based it purely on standard React functionality we can build even nicer things on top.
 I'll show how we can use composition to build some custom hooks for our state.
 Given that a TODO app is the standard demo application I will build a `useTodos` hook that features `todos` (the state) and `addTodo` and `removeTodo` handlers that internally connect to the state.
-This is an example how knowledge of the core can be used for information hiding.
-As the last food for thought I will challenge the idea that an application should only have **one** store.
-With our approach we can encapsulate data from each other and only use certain stores when they are really needed.
+This is an example of how knowledge of the core can be used for information hiding.
+As the last food for thought, I will challenge the idea that an application should only have **one** store.
+With our approach, we can encapsulate data from each other and only use certain stores when they are really needed.
